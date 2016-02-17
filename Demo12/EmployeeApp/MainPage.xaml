@@ -26,11 +26,11 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
-        <ListView ItemsSource="{x:Bind ViewModel.Employees}"
+        <GridView ItemsSource="{x:Bind ViewModel.Employees}"
               ItemClick="ListView_ItemClick"
               IsItemClickEnabled="True"
               ItemTemplate="{StaticResource EmployeeListDataTemplate}">
-        </ListView>
+        </GridView>
         <TextBlock Grid.Row="1"
                x:Name="ResultTextBlock"
                FontSize="24"
